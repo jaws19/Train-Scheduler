@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Train Scheduler</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <h2>Train Scheduler</h2>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- Body Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="lead">Add Train</p>
+                        <hr>
+                        <form>
+                            <div class="form-group">
+                                <p>Train Name</p>
+                                <input type="text" class="form-control" id="train-name" required>
+                            </div>
+                            <div class="form-group">
+                                <p>Destination</p>
+                                <input type="text" class="form-control" id="train-destination" required>
+                            </div>
+                            <div class="form-group">
+                                <p>First Train Time (HH:mm - military time)</p>
+                                <input type="text" class="form-control" id="train-time" required>
+                            </div>
+                            <div class="form-group">
+                                <p>Frequency (min)</p>
+                                <input type="text" class="form-control" id="train-frequency" required>
+                            </div>
+                            <button type="button" id="train-button" name="submit" class="btn btn-primary pull-left ">Add Train
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="lead">Train Schedule</p>
+                        <hr>
+                        <table class="table table-hover" id='train-table'>
+                            <thead>
+                                <tr>
+                                    <th>Train Name</th>
+                                    <th>Destination</th>
+                                    <th>Frequency (min)</th>
+                                    <th>Next Arrival</th>
+                                    <th>Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted text-center">&copy; 2017 Wesley Martin</p>
+        </div>
+    </footer>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script>
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js "><\/script>')
+    </script>
+    <!-- Custom scripts for this template -->
+    <script type="text/javascript " src="assets/script.js "></script>
+</body>
+
+</html>

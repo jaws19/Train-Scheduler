@@ -1,0 +1,82 @@
+/* Global */
+
+* {
+    border-radius: 0 !important;
+}
+
+html body {
+    background-color: #F9F9F9;
+}
+
+body {
+    color: #333;
+}
+
+h2 {
+    color: #fff;
+    font-weight: lighter;
+}
+
+hr {
+    border-color: #d9d9d9;
+}
+
+.lead {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+
+/* Navbar */
+
+.navbar {
+    background-color: #4752b3;
+    padding: 0 0 10px 0;
+    border: none;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, .28);
+}
+
+.navbar-header {
+    text-align: center;
+}
+
+
+/* Panels */
+
+.panel {
+    box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+}
+
+
+/* Button */
+
+#train-button {
+    background-color: #4752b3;
+    border: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+}
+
+
+/* Form */
+
+th {
+    color: rgba(0, 0, 0, 0.54);
+    font-weight: bold;
+}
+
+.form-control:focus {
+    border-color: #f9f9f9;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+}
+
+.table thead > tr > th {
+    border-bottom: none;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #fff;
+    padding: 10px 0 0 0;
+    border-top: 1px solid #e4e4e4;
+}
